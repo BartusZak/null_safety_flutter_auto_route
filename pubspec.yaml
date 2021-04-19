@@ -3,7 +3,7 @@ description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -18,28 +18,99 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ^2.0.3
 
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl_phone_field: ^2.0.0
+  amazon_cognito_identity_dart_2: ^1.0.0-nullsafety.3
+  archive: ^3.1.2
+  assets_audio_player: ^3.0.3+2
   auto_route: ^1.0.2
-
+  bloc: ^7.0.0
+  cached_network_image: ^3.0.0
+  color: ^3.0.0
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  device_info: ^2.0.0
+  dio: ^4.0.0
+  equatable: ^2.0.0
+  file: ^6.1.0
+  flutter_bloc: ^7.0.0
+  flutter_colorpicker: ^0.4.0
+  flutter_easyloading: ^3.0.0
+  get_it: ^6.0.0
+  google_fonts: ^2.0.0
+  hovering: ^1.0.4
+  http: ^0.13.1
+  hydrated_bloc: ^7.0.0
+  image: ^3.0.2
+  image_gallery_saver: 1.6.9
+  image_picker: ^0.7.4
+  #TODO: Resolve errors after enabling those
+  # epub_view: ^1.0.0
+  # epub_viewer: ^0.1.9
+  implicitly_animated_reorderable_list: ^0.4.0-dev+4
+  intl: ^0.17.0
+  json_annotation: ^4.0.1
+  just_audio: ^0.7.3
+  mask_text_input_formatter: ^2.0.0-nullsafety.2
+  material_design_icons_flutter: ^5.0.5955-rc.1
+  material_floating_search_bar: ^0.3.3
+  matrix_gesture_detector: ^0.2.0-nullsafety.1
+  native_pdf_view: ^4.0.1
+  package_info: ^2.0.0
+  # painter: ^0.4.0
+  flutter_svg: ^0.21.0+1
+  expandable: ^5.0.1
+  painter:
+    git:
+      url: https://github.com/Underwings-it/painter
+      ref: null-safety
+  permission_handler: ^6.1.1
+  pin_code_text_field: ^1.8.0 # something broke after 1.7.0
+  shared_preferences: ^2.0.5
+  # sigv4: ^5.0.0-nullsafety.0
+  sigv4:
+    git:
+      url: https://github.com/bartuszak/sigv4.git
+      ref: null-safety
+  url_launcher: ^6.0.3
+  uuid: ^3.0.3
+  video_player: ^2.1.0
+  webview_flutter: ^2.0.2
+  new_version: ^0.2.0
+  rxdart: ^0.26.0
+  # TODO: Remove
+  # video_player_web_hls: ^0.1.9
+  video_player_web_hls:
+    git:
+      url: https://github.com/BartusZak/video_player_web_hls.git
+      ref: headers-sigv4
+  collection: ^1.15.0-nullsafety.4
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+    # flutter packages pub run build_runner build
+  auto_route_generator: ^1.0.2
+  #  flutter pub run build_runner build --delete-conflicting-outputs
+  #  flutter pub run build_runner watch --delete-conflicting-outputs
+  build_runner: ^1.10.3
+  #  flutter pub run flutter_launcher_icons:main
+  flutter_launcher_icons: ^0.9.0
+  json_serializable: ^4.1.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
