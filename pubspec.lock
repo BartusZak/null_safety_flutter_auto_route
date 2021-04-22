@@ -728,15 +728,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.0"
-  painter:
-    dependency: "direct main"
-    description:
-      path: "."
-      ref: null-safety
-      resolved-ref: "47c484f0e353981495573b7834d1d7db8a49f98e"
-      url: "https://github.com/Underwings-it/painter"
-    source: git
-    version: "0.4.0"
   path:
     dependency: transitive
     description:
